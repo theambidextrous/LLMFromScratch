@@ -3,8 +3,8 @@ from tiktoken.load import data_gym_to_mergeable_bpe_ranks
 
 
 def load_gpt2_encoding_offline() -> tiktoken.Encoding:
-    encoder_json_path = "C:/Users/e119897/Work/llm/LLMFromScratch/tiktokenizer/encoder.json"
-    vocab_bpe_path = "C:/Users/e119897/Work/llm/LLMFromScratch/tiktokenizer/vocab.bpe"
+    encoder_json_path = "/Users/juma/Gigs/LLM/LLMFromScratch/tiktokenizer/encoder.json"
+    vocab_bpe_path = "/Users/juma/Gigs/LLM/LLMFromScratch/tiktokenizer/vocab.bpe"
     special_tokens = {"<|endoftext|>": 50256}
 
     mergeable_ranks = data_gym_to_mergeable_bpe_ranks(vocab_bpe_path, encoder_json_path)

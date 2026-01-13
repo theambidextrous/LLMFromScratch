@@ -35,3 +35,7 @@ def create_data_loader_v1(txt, batch_size, max_length, stride=128, shuffle=True,
         num_workers=num_workers
     )
     return dataloader
+
+
+def soft_max_naive(x):
+    return torch.exp(x) / torch.exp(x).sum(dim=0)
